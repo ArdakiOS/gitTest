@@ -11,7 +11,7 @@ import SwiftUI
 struct gitTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainPage()
         }
     }
 }
