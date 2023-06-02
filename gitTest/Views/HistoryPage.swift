@@ -9,11 +9,20 @@ import SwiftUI
 
 struct HistoryPage: View {
     @State var text : String = ""
+    @StateObject var history = ViewHistory.history
     var body: some View {
         NavigationStack() {
             VStack{
                 SearchBar(text: $text)
                     .padding(.bottom)
+                ScrollView{
+                    if(history.viwedRepos.isEmpty){
+                        Text("History is clear")
+                    }
+                    ForEach((history.viwedRepos), id: \.self){repo in
+                        RepoRow(repo: repo)
+                    }
+                }
             }
             .navigationBarBackButtonHidden(true)
             .navigationTitle("GitHub")

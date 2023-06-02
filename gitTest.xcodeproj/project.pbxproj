@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9873D53E2A29FB0100085784 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 9873D53D2A29FB0100085784 /* OAuth2 */; };
+		9873D5402A29FB1600085784 /* GitHubAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873D53F2A29FB1600085784 /* GitHubAuthView.swift */; };
 		98DE3EA32A29016A0087C545 /* gitTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EA22A29016A0087C545 /* gitTestApp.swift */; };
 		98DE3EA52A29016A0087C545 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EA42A29016A0087C545 /* ContentView.swift */; };
 		98DE3EA72A29016C0087C545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DE3EA62A29016C0087C545 /* Assets.xcassets */; };
@@ -23,9 +25,11 @@
 		98DE3ECE2A2908000087C545 /* UsersAllRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ECD2A2908000087C545 /* UsersAllRepos.swift */; };
 		98DE3ED02A2908B40087C545 /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ECF2A2908B40087C545 /* RepoRow.swift */; };
 		98DE3ED22A2927C30087C545 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ED12A2927C30087C545 /* ProfilePage.swift */; };
+		98DE3ED42A292E4A0087C545 /* ViewHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ED32A292E4A0087C545 /* ViewHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9873D53F2A29FB1600085784 /* GitHubAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAuthView.swift; sourceTree = "<group>"; };
 		98DE3E9F2A29016A0087C545 /* gitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DE3EA22A29016A0087C545 /* gitTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitTestApp.swift; sourceTree = "<group>"; };
 		98DE3EA42A29016A0087C545 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 		98DE3ECD2A2908000087C545 /* UsersAllRepos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAllRepos.swift; sourceTree = "<group>"; };
 		98DE3ECF2A2908B40087C545 /* RepoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
 		98DE3ED12A2927C30087C545 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		98DE3ED32A292E4A0087C545 /* ViewHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9873D53E2A29FB0100085784 /* OAuth2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				98DE3EB82A2901E70087C545 /* FetchRepos.swift */,
+				98DE3ED32A292E4A0087C545 /* ViewHistory.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 				98DE3EC42A2902600087C545 /* HistoryPage.swift */,
 				98DE3EC62A2902730087C545 /* LoginPage.swift */,
 				98DE3ED12A2927C30087C545 /* ProfilePage.swift */,
+				9873D53F2A29FB1600085784 /* GitHubAuthView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +167,9 @@
 			dependencies = (
 			);
 			name = gitTest;
+			packageProductDependencies = (
+				9873D53D2A29FB0100085784 /* OAuth2 */,
+			);
 			productName = gitTest;
 			productReference = 98DE3E9F2A29016A0087C545 /* gitTest.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 98DE3E962A29016A0087C545;
+			packageReferences = (
+				9873D53C2A29FB0100085784 /* XCRemoteSwiftPackageReference "OAuth2" */,
+			);
 			productRefGroup = 98DE3EA02A29016A0087C545 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,8 +239,10 @@
 				98DE3ECA2A29033A0087C545 /* SearchBar.swift in Sources */,
 				98DE3ED22A2927C30087C545 /* ProfilePage.swift in Sources */,
 				98DE3EC32A29024C0087C545 /* MainPage.swift in Sources */,
+				98DE3ED42A292E4A0087C545 /* ViewHistory.swift in Sources */,
 				98DE3EBC2A2902040087C545 /* TestToken.swift in Sources */,
 				98DE3ED02A2908B40087C545 /* RepoRow.swift in Sources */,
+				9873D5402A29FB1600085784 /* GitHubAuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +443,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9873D53C2A29FB0100085784 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9873D53D2A29FB0100085784 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9873D53C2A29FB0100085784 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98DE3E972A29016A0087C545 /* Project object */;
 }

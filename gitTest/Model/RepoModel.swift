@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct RepoModelByName : Decodable, Hashable{
+struct RepoModelByName : Codable, Hashable{
     let items : [RepoModel]
 }
 
-struct RepoModel : Decodable, Hashable{
+struct RepoModel : Codable, Hashable{
     let full_name: String
     let html_url : String
     let description : String?

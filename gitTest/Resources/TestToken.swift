@@ -8,5 +8,5 @@
 import Foundation
 
 struct TestToken {
-    static var token = "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"
+    static var token = "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"
 }

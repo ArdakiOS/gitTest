@@ -11,6 +11,7 @@ struct MainPage: View {
     @StateObject var fetch = FetchRepos()
     @State var text : String = ""
     @State var byUser = true
+    
     var body: some View {
         NavigationStack() {
             VStack{
