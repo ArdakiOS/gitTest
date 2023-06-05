@@ -7,27 +7,35 @@
 6. Logout functionality
 
 # Login Page
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 53 50](https://github.com/ArdakiOS/gitTest/assets/126677952/9386e6fb-c6ea-455a-b5b4-f35e8ae303eb)
+![Login](https://github.com/ArdakiOS/gitTest/assets/126677952/dc239f60-1054-4ea4-9b1b-cd7fbfea85b3)
 # Authorize with github
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 54 20](https://github.com/ArdakiOS/gitTest/assets/126677952/836cd9c3-ac2f-431d-9d53-065b838c872b)
-
+![Auth](https://github.com/ArdakiOS/gitTest/assets/126677952/cb807129-9752-4a3b-be9a-500caca4603f)
 # Search by username
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 54 45](https://github.com/ArdakiOS/gitTest/assets/126677952/41735c0c-e8e9-4947-81a1-1afc0d8337b8)
+![User](https://github.com/ArdakiOS/gitTest/assets/126677952/2bd1c2dc-cd96-467f-b2b8-e37027a5ba47)
 # Repos of picked username
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 54 51](https://github.com/ArdakiOS/gitTest/assets/126677952/1a8c9d38-7fdf-4b48-8bb4-37bf81a0915c)
+![UserRepo](https://github.com/ArdakiOS/gitTest/assets/126677952/c377791a-136c-4569-ab19-5c66b9e51439)
 # Search by repository name
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 55 03](https://github.com/ArdakiOS/gitTest/assets/126677952/cda3be8a-7be4-4494-86bf-634e154584e6)
+![RepoSearch](https://github.com/ArdakiOS/gitTest/assets/126677952/79985440-3b60-48dd-9405-eb855642d32c)
 # Pagination example
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 55 09](https://github.com/ArdakiOS/gitTest/assets/126677952/8f97dcf9-f7ae-47c7-bdce-391414d2c4d3)
+![Pagination](https://github.com/ArdakiOS/gitTest/assets/126677952/2ebc7403-e702-4c3e-90bc-b8999e46e652)
 
 # History
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 55 16](https://github.com/ArdakiOS/gitTest/assets/126677952/232a827c-4ab2-49fd-a709-aec048bb4194)
 
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 55 38](https://github.com/ArdakiOS/gitTest/assets/126677952/6b278e06-e5bb-4ea6-8fbb-ada901e9df33)
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 55 44](https://github.com/ArdakiOS/gitTest/assets/126677952/0ab7225a-2dae-40eb-9944-b411195459b0)
+![HistoryEmpty](https://github.com/ArdakiOS/gitTest/assets/126677952/607de607-5a14-439e-ab2f-d7d48954572d)
+![History](https://github.com/ArdakiOS/gitTest/assets/126677952/5001a519-6654-4c42-8f97-c58f4f6278b3)
+![HistorySearch](https://github.com/ArdakiOS/gitTest/assets/126677952/2ecdb76a-eb3e-4d69-83c7-d817d583840e)
+
 # Profile
+![Profile](https://github.com/ArdakiOS/gitTest/assets/126677952/09eca277-fa59-40b3-84f9-e1feb33f4dc5)
+![ProfileRepos](https://github.com/ArdakiOS/gitTest/assets/126677952/3210c294-35d0-456d-a203-b4ee3ebe94ca)
 
 
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 55 49](https://github.com/ArdakiOS/gitTest/assets/126677952/778a6a69-a856-4094-bfe6-36f9c8caa358)
 
-![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-05 at 11 55 57](https://github.com/ArdakiOS/gitTest/assets/126677952/e858d256-7030-4f9f-86bc-9b0e32344d42)
+
+
+
+
+
+
+
+
