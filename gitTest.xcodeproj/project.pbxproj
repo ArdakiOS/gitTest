@@ -7,46 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9873D53E2A29FB0100085784 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 9873D53D2A29FB0100085784 /* OAuth2 */; };
-		9873D5402A29FB1600085784 /* GitHubAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873D53F2A29FB1600085784 /* GitHubAuthView.swift */; };
+		9819E9AB2A2CA94800D667A9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9819E9AA2A2CA94800D667A9 /* Extensions.swift */; };
+		9819E9AD2A2CA96A00D667A9 /* NavTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9819E9AC2A2CA96A00D667A9 /* NavTabBar.swift */; };
+		9873D5442A2A0B4300085784 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9873D5432A2A0B4300085784 /* OAuthSwift */; };
+		9873D54A2A2A1E5000085784 /* TokenRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873D5492A2A1E5000085784 /* TokenRetriever.swift */; };
+		9873D54C2A2A296200085784 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873D54B2A2A296200085784 /* TokenModel.swift */; };
+		988C60332A2CB008008B7A81 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C60322A2CB008008B7A81 /* Search.swift */; };
+		988C60372A2CB133008B7A81 /* HistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C60362A2CB133008B7A81 /* HistoryPage.swift */; };
+		988C60392A2CB17C008B7A81 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C60382A2CB17C008B7A81 /* Profile.swift */; };
+		988C603B2A2CB62F008B7A81 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C603A2A2CB62F008B7A81 /* CustomTabBar.swift */; };
+		988C603D2A2CBEE0008B7A81 /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C603C2A2CBEE0008B7A81 /* RepoRow.swift */; };
+		988C603F2A2CDBDB008B7A81 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C603E2A2CDBDB008B7A81 /* UserRow.swift */; };
+		988C60412A2CE373008B7A81 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C60402A2CE373008B7A81 /* LoadingView.swift */; };
 		98DE3EA32A29016A0087C545 /* gitTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EA22A29016A0087C545 /* gitTestApp.swift */; };
-		98DE3EA52A29016A0087C545 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EA42A29016A0087C545 /* ContentView.swift */; };
 		98DE3EA72A29016C0087C545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DE3EA62A29016C0087C545 /* Assets.xcassets */; };
 		98DE3EAA2A29016C0087C545 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DE3EA92A29016C0087C545 /* Preview Assets.xcassets */; };
 		98DE3EB22A2901950087C545 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EB12A2901950087C545 /* RepoModel.swift */; };
 		98DE3EB42A2901A70087C545 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EB32A2901A70087C545 /* UserModel.swift */; };
 		98DE3EB92A2901E70087C545 /* FetchRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EB82A2901E70087C545 /* FetchRepos.swift */; };
-		98DE3EBC2A2902040087C545 /* TestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EBB2A2902040087C545 /* TestToken.swift */; };
-		98DE3EC32A29024C0087C545 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EC22A29024C0087C545 /* MainPage.swift */; };
-		98DE3EC52A2902600087C545 /* HistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EC42A2902600087C545 /* HistoryPage.swift */; };
 		98DE3EC72A2902730087C545 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EC62A2902730087C545 /* LoginPage.swift */; };
 		98DE3ECA2A29033A0087C545 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3EC92A29033A0087C545 /* SearchBar.swift */; };
-		98DE3ECC2A2904030087C545 /* ResultByName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ECB2A2904030087C545 /* ResultByName.swift */; };
-		98DE3ECE2A2908000087C545 /* UsersAllRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ECD2A2908000087C545 /* UsersAllRepos.swift */; };
-		98DE3ED02A2908B40087C545 /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ECF2A2908B40087C545 /* RepoRow.swift */; };
-		98DE3ED22A2927C30087C545 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ED12A2927C30087C545 /* ProfilePage.swift */; };
 		98DE3ED42A292E4A0087C545 /* ViewHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE3ED32A292E4A0087C545 /* ViewHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9873D53F2A29FB1600085784 /* GitHubAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAuthView.swift; sourceTree = "<group>"; };
+		9819E9AA2A2CA94800D667A9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9819E9AC2A2CA96A00D667A9 /* NavTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTabBar.swift; sourceTree = "<group>"; };
+		9873D5412A2A033800085784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9873D5492A2A1E5000085784 /* TokenRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRetriever.swift; sourceTree = "<group>"; };
+		9873D54B2A2A296200085784 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		988C60322A2CB008008B7A81 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		988C60362A2CB133008B7A81 /* HistoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPage.swift; sourceTree = "<group>"; };
+		988C60382A2CB17C008B7A81 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		988C603A2A2CB62F008B7A81 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		988C603C2A2CBEE0008B7A81 /* RepoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
+		988C603E2A2CDBDB008B7A81 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		988C60402A2CE373008B7A81 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		98DE3E9F2A29016A0087C545 /* gitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DE3EA22A29016A0087C545 /* gitTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitTestApp.swift; sourceTree = "<group>"; };
-		98DE3EA42A29016A0087C545 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		98DE3EA62A29016C0087C545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98DE3EA92A29016C0087C545 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98DE3EB12A2901950087C545 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		98DE3EB32A2901A70087C545 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		98DE3EB82A2901E70087C545 /* FetchRepos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepos.swift; sourceTree = "<group>"; };
-		98DE3EBB2A2902040087C545 /* TestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToken.swift; sourceTree = "<group>"; };
-		98DE3EC22A29024C0087C545 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
-		98DE3EC42A2902600087C545 /* HistoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPage.swift; sourceTree = "<group>"; };
 		98DE3EC62A2902730087C545 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		98DE3EC92A29033A0087C545 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		98DE3ECB2A2904030087C545 /* ResultByName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultByName.swift; sourceTree = "<group>"; };
-		98DE3ECD2A2908000087C545 /* UsersAllRepos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAllRepos.swift; sourceTree = "<group>"; };
-		98DE3ECF2A2908B40087C545 /* RepoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
-		98DE3ED12A2927C30087C545 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		98DE3ED32A292E4A0087C545 /* ViewHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9873D53E2A29FB0100085784 /* OAuth2 in Frameworks */,
+				9873D5442A2A0B4300085784 /* OAuthSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +86,13 @@
 		98DE3EA12A29016A0087C545 /* gitTest */ = {
 			isa = PBXGroup;
 			children = (
+				9873D5412A2A033800085784 /* Info.plist */,
 				98DE3EC82A29032C0087C545 /* SubViews */,
 				98DE3EBD2A2902170087C545 /* Views */,
 				98DE3EBA2A2901F90087C545 /* Resources */,
 				98DE3EB52A2901B70087C545 /* Managers */,
 				98DE3EB02A29017E0087C545 /* Model */,
 				98DE3EA22A29016A0087C545 /* gitTestApp.swift */,
-				98DE3EA42A29016A0087C545 /* ContentView.swift */,
 				98DE3EA62A29016C0087C545 /* Assets.xcassets */,
 				98DE3EA82A29016C0087C545 /* Preview Content */,
 			);
@@ -107,6 +112,7 @@
 			children = (
 				98DE3EB12A2901950087C545 /* RepoModel.swift */,
 				98DE3EB32A2901A70087C545 /* UserModel.swift */,
+				9873D54B2A2A296200085784 /* TokenModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 			children = (
 				98DE3EB82A2901E70087C545 /* FetchRepos.swift */,
 				98DE3ED32A292E4A0087C545 /* ViewHistory.swift */,
+				9873D5492A2A1E5000085784 /* TokenRetriever.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -123,7 +130,7 @@
 		98DE3EBA2A2901F90087C545 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				98DE3EBB2A2902040087C545 /* TestToken.swift */,
+				9819E9AA2A2CA94800D667A9 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -131,11 +138,11 @@
 		98DE3EBD2A2902170087C545 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				98DE3EC22A29024C0087C545 /* MainPage.swift */,
-				98DE3EC42A2902600087C545 /* HistoryPage.swift */,
 				98DE3EC62A2902730087C545 /* LoginPage.swift */,
-				98DE3ED12A2927C30087C545 /* ProfilePage.swift */,
-				9873D53F2A29FB1600085784 /* GitHubAuthView.swift */,
+				9819E9AC2A2CA96A00D667A9 /* NavTabBar.swift */,
+				988C60322A2CB008008B7A81 /* Search.swift */,
+				988C60362A2CB133008B7A81 /* HistoryPage.swift */,
+				988C60382A2CB17C008B7A81 /* Profile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,10 +150,11 @@
 		98DE3EC82A29032C0087C545 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				98DE3ECD2A2908000087C545 /* UsersAllRepos.swift */,
 				98DE3EC92A29033A0087C545 /* SearchBar.swift */,
-				98DE3ECB2A2904030087C545 /* ResultByName.swift */,
-				98DE3ECF2A2908B40087C545 /* RepoRow.swift */,
+				988C603A2A2CB62F008B7A81 /* CustomTabBar.swift */,
+				988C603C2A2CBEE0008B7A81 /* RepoRow.swift */,
+				988C603E2A2CDBDB008B7A81 /* UserRow.swift */,
+				988C60402A2CE373008B7A81 /* LoadingView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -168,7 +176,7 @@
 			);
 			name = gitTest;
 			packageProductDependencies = (
-				9873D53D2A29FB0100085784 /* OAuth2 */,
+				9873D5432A2A0B4300085784 /* OAuthSwift */,
 			);
 			productName = gitTest;
 			productReference = 98DE3E9F2A29016A0087C545 /* gitTest.app */;
@@ -199,7 +207,7 @@
 			);
 			mainGroup = 98DE3E962A29016A0087C545;
 			packageReferences = (
-				9873D53C2A29FB0100085784 /* XCRemoteSwiftPackageReference "OAuth2" */,
+				9873D5422A2A0B4300085784 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
 			);
 			productRefGroup = 98DE3EA02A29016A0087C545 /* Products */;
 			projectDirPath = "";
@@ -227,22 +235,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98DE3ECC2A2904030087C545 /* ResultByName.swift in Sources */,
-				98DE3EA52A29016A0087C545 /* ContentView.swift in Sources */,
+				988C60372A2CB133008B7A81 /* HistoryPage.swift in Sources */,
 				98DE3EC72A2902730087C545 /* LoginPage.swift in Sources */,
 				98DE3EA32A29016A0087C545 /* gitTestApp.swift in Sources */,
 				98DE3EB42A2901A70087C545 /* UserModel.swift in Sources */,
-				98DE3EC52A2902600087C545 /* HistoryPage.swift in Sources */,
-				98DE3ECE2A2908000087C545 /* UsersAllRepos.swift in Sources */,
+				988C603F2A2CDBDB008B7A81 /* UserRow.swift in Sources */,
+				9873D54A2A2A1E5000085784 /* TokenRetriever.swift in Sources */,
+				9819E9AD2A2CA96A00D667A9 /* NavTabBar.swift in Sources */,
 				98DE3EB92A2901E70087C545 /* FetchRepos.swift in Sources */,
 				98DE3EB22A2901950087C545 /* RepoModel.swift in Sources */,
 				98DE3ECA2A29033A0087C545 /* SearchBar.swift in Sources */,
-				98DE3ED22A2927C30087C545 /* ProfilePage.swift in Sources */,
-				98DE3EC32A29024C0087C545 /* MainPage.swift in Sources */,
+				988C60332A2CB008008B7A81 /* Search.swift in Sources */,
+				988C603B2A2CB62F008B7A81 /* CustomTabBar.swift in Sources */,
+				988C603D2A2CBEE0008B7A81 /* RepoRow.swift in Sources */,
+				9873D54C2A2A296200085784 /* TokenModel.swift in Sources */,
+				9819E9AB2A2CA94800D667A9 /* Extensions.swift in Sources */,
+				988C60412A2CE373008B7A81 /* LoadingView.swift in Sources */,
+				988C60392A2CB17C008B7A81 /* Profile.swift in Sources */,
 				98DE3ED42A292E4A0087C545 /* ViewHistory.swift in Sources */,
-				98DE3EBC2A2902040087C545 /* TestToken.swift in Sources */,
-				98DE3ED02A2908B40087C545 /* RepoRow.swift in Sources */,
-				9873D5402A29FB1600085784 /* GitHubAuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +384,7 @@
 				DEVELOPMENT_TEAM = 364MUK427X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gitTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,6 +414,7 @@
 				DEVELOPMENT_TEAM = 364MUK427X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gitTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,9 +457,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9873D53C2A29FB0100085784 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+		9873D5422A2A0B4300085784 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/p2/OAuth2.git";
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -456,10 +468,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9873D53D2A29FB0100085784 /* OAuth2 */ = {
+		9873D5432A2A0B4300085784 /* OAuthSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9873D53C2A29FB0100085784 /* XCRemoteSwiftPackageReference "OAuth2" */;
-			productName = OAuth2;
+			package = 9873D5422A2A0B4300085784 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

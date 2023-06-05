@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct gitTestApp: App {
+    
+    @StateObject var state = TokenRetriever()
     var body: some Scene {
         WindowGroup {
-            MainPage()
+            NavigationStack{
+                LoginPage()
+            }
+            .environmentObject(state)
+            
         }
     }
 }
+
+

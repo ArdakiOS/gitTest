@@ -10,17 +10,28 @@ import SwiftUI
 struct SearchBar: View {
     @Binding var text : String
     var body: some View {
-        TextField("Search", text: $text)
-            .padding(10)
-            .overlay {
-                RoundedRectangle(cornerRadius: 5).stroke(.black, lineWidth: 1)
+        ZStack{
+            HStack{
+                Text("Enter the name")
+                    .padding(.leading, 25)
+                    .foregroundColor(.white)
+                    .opacity(text.isEmpty ? 1 : 0)
+                Spacer()
             }
-            .padding(.horizontal)
+            TextField("", text: $text)
+                .foregroundColor(.white)
+                .padding(10)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 5).stroke(.white, lineWidth: 1)
+                }
+                .padding(.horizontal)
+        }
+        
     }
 }
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        MainPage()
+        NavTabBar()
     }
 }

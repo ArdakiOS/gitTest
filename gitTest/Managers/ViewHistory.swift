@@ -9,33 +9,35 @@ import Foundation
 
 class ViewHistory : ObservableObject{
     static let history = ViewHistory()
+    var owner  = FetchRepos().login
     
-    @Published var viwedRepos : [RepoModel]{
+    @Published var saved : [RepoModel]{
         didSet{
-            do{
-                let encoded = try JSONEncoder().encode(viwedRepos)
-                UserDefaults.standard.set(encoded, forKey: "History")
+            let encoder = JSONEncoder()
+            if let encodedData = try? encoder.encode(saved){
+                UserDefaults.standard.set(encodedData, forKey: "data")
             }
-            catch{
-                print(error.localizedDescription)
-            }
-            
+        
         }
+        
     }
     
     init() {
-        if let encoded = UserDefaults.standard.data(forKey: "History"){
+        if let encoded = UserDefaults.standard.data(forKey: "data"){
             do{
                 let decoded = try JSONDecoder().decode([RepoModel].self, from: encoded)
-                viwedRepos = decoded
+                saved = decoded
             }
             catch{
-                print(error.localizedDescription)
-                viwedRepos = []
+                print(error)
+                saved = []
             }
         }
-        else {
-            viwedRepos = []
+        else{
+            saved = []
         }
     }
+    
 }
+
+

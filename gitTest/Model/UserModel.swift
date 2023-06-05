@@ -16,4 +16,5 @@ struct UserModel : Decodable, Hashable{
     let avatar_url : String
     let html_url : String
     let repos_url : String
+    
 }

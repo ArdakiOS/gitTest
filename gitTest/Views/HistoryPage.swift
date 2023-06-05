@@ -1,65 +1,55 @@
 //
-//  HistoryPage.swift
+//  NewHistoryPage.swift
 //  gitTest
 //
-//  Created by Ardak Tursunbayev on 01.06.2023.
+//  Created by Ardak Tursunbayev on 04.06.2023.
 //
 
 import SwiftUI
 
 struct HistoryPage: View {
-    @State var text : String = ""
+    
+    @StateObject var fetch = FetchRepos()
     @StateObject var history = ViewHistory.history
+    @State var saved : [RepoModel] = []
+    @State var text = ""
     var body: some View {
-        NavigationStack() {
-            VStack{
-                SearchBar(text: $text)
-                    .padding(.bottom)
-                ScrollView{
-                    if(history.viwedRepos.isEmpty){
-                        Text("History is clear")
-                    }
-                    ForEach((history.viwedRepos), id: \.self){repo in
-                        RepoRow(repo: repo)
-                    }
+        VStack{
+            Text("History")
+                .foregroundColor(.white)
+                .font(.title)
+            
+            SearchBar(text: $text)
+            ScrollView{
+                
+                if(history.saved.isEmpty) {
+                    Text("History is clear")
+                        .foregroundColor(.white)
                 }
-            }
-            .navigationBarBackButtonHidden(true)
-            .navigationTitle("GitHub")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink {
-                        MainPage()
-                    } label: {
-                        HStack{
-                            Image(systemName: "house")
-                            Text("Main")
+                else{
+                    if text.isEmpty{
+                        ForEach((history.saved), id: \.self){repo in
+                            RepoRow(repo: repo)
                         }
-                        .bold()
-                        .foregroundColor(.black)
                     }
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    NavigationLink {
-                        ProfilePage()
-                    } label: {
-                        HStack{
-                            Image(systemName: "person")
-                            Text("Profile")
+                    else{
+                        ForEach((history.saved), id: \.self){repo in
+                            if repo.full_name.lowercased().contains(text.lowercased()){
+                                RepoRow(repo: repo)
+                            }
+                            
                         }
-                        .bold()
-                        .foregroundColor(.black)
                     }
-
                     
                 }
             }
         }
+        .background(Color.black)
+        
     }
 }
 
-struct HistoryPage_Previews: PreviewProvider {
+struct NewHistoryPage_Previews: PreviewProvider {
     static var previews: some View {
         HistoryPage()
     }
